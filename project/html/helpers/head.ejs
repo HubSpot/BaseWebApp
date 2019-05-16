@@ -1,0 +1,51 @@
+<meta charset="UTF-8">
+<title>Base Web App</title>
+
+
+<!-- First we import our css files -->
+
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" />
+
+<!-- font awesome css -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+<!-- this app's own css -->
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+
+
+<!-- Next import js files -->
+
+<!-- first we import jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<!-- then bootstrap -->
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "<%= process.env.FIREBASE_API_KEY %>",
+    authDomain: "rough-cuts-361cb.firebaseapp.com",
+    databaseURL: "https://rough-cuts-361cb.firebaseio.com",
+    projectId: "rough-cuts-361cb",
+    storageBucket: "rough-cuts-361cb.appspot.com",
+    messagingSenderId: "849707844615",
+    appId: "1:849707844615:web:acb77c328b076ead"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+
+<!-- then our app's own js file -->
+<script src="js/main.js"></script>

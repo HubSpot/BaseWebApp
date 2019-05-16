@@ -1,0 +1,20 @@
+
+body {
+  background-color: #d0e4fe;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  color: orange;
+}
+
+p {
+  font-family: "Courier New";
+  font-size: 30px;
+}
+
+#doge-image img {
+  height: 140px;
+  margin-top: 20px;
+}

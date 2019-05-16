@@ -4,24 +4,19 @@
 </head>
 
 <body>
-  <!-- the classes 'page-header' and 'btn btn-default' create bootstrap components.  -->
+  <!-- the classes 'page-header' and 'btn btn-dark' create bootstrap components.  -->
   <!-- Check out more components here: http://getbootstrap.com/components/ -->
   <div class="page-header">
+
+  
     <h1>My Web App</h1>
   </div>
 
-  <button onClick="handleSignIn()">Login</button>
+  <p>Click on the button for a surprise.</p>
 
-  <form onSubmit="handleMessageFormSubmit()" action="#">
-    Title:
-    <input id="post-title" type=text><br>
-    Body:
-    <textarea id="post-body"></textarea><br><br>
-    <button>Submit</button>
-  </form>
+  <button onClick="showPicture()" class="btn btn-dark">Click me</button>
 
-  <div id="post-listing"></div>
-
+  <div id="image"></div>
   
 </body>
 

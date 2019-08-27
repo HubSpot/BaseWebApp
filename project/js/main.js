@@ -5,5 +5,14 @@ function showPicture(){
   $("p").html("High five! You're building your first web app!");
 
   // jQuery can do a lot of crazy stuff, so make sure to Google around to find out more
-  
+  $(document).ready(function(){
+    getWeather();
+  })
+}
+function getWeather() {
+  var url = "https://api.openweathermap.org/data.2.5/weather?q=Boston&APPID="+apiKey;
+
+  $.ajax(url,{success: function(data){
+    console.log(data);
+  }})
 }
